@@ -10,8 +10,9 @@
 - 二值化 + ocr
 
 ## 核心代码
-- [verify_code_ocr](./verify_code_ocr.py)
-- []()
+- [verify_code_ocr.py](./verify_code_ocr.py) 核心类
+- [noise_remove_pil.py](./noise_remove_pil.py) Python图片验证码降噪 — 8邻域降噪
+- [png_ocr.py](./png_ocr.py) 测试代码
 
 ## 尚未解决
 - 识别率大概是80%左右，部分连起来的字符会被识别错误

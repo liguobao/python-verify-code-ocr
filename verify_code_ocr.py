@@ -68,13 +68,18 @@ class VerfyCodeOCR():
                         img.putpixel((_w, _h), (255, 255, 255))
 
         logger.info(f"_remove_pil finish.")
-        img.show()
+        # img.show()
         return img
 
 
 if __name__ == '__main__':
     verfyCodeOCR = VerfyCodeOCR()
     img_path = "./imgs/51.png"
-    ocr_result = verfyCodeOCR.ocr(img_path)
-    print(ocr_result)
-    Image.open(img_path).show()
+    img= Image.open(img_path)
+    img.show()
+    ocr_result = verfyCodeOCR.ocr(img)
+    img.show()
+    logger.info(ocr_result)
+    
+    
+    
