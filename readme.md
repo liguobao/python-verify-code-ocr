@@ -9,6 +9,10 @@
 - 移除无用的干扰线段 + 移除无用噪点
 - 二值化 + ocr
 
+## 效果图
+
+![效果图](./效果图.png)
+
 ## 核心代码
 - [verify_code_ocr.py](./verify_code_ocr.py) 核心类
 - [noise_remove_pil.py](./noise_remove_pil.py) Python图片验证码降噪 — 8邻域降噪
